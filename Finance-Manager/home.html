@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Load the AJAX API-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="graph.js" defer>
+    </script>
+    <script src="MainBrain.js" defer></script>
+            <title>
+            FINANCIAL DATA MANAGER
+        </title>
+    <link href="finance.css" rel="stylesheet">
+  </head>
+    <body onload="load()">
+        <h1>FINANCIAL-DATA-MANGAER</h1>
+        <br>
+        <br>
+        <div>
+            <table align="center" >
+                <th>Enter Your Estimated Monthly Expenses (Nrs)</th>
+                
+                <tr><td>Foods</td><td>Rs</td> <td><input id="food"type ="number"> </td></tr>
+                <tr><td>Housing</td><td>Rs</td><td><input id="housing" type="number"></td></tr>
+                <tr><td>Saving</td><td>Rs</td><td><input id="saving" type="number"></td></tr>
+                <tr><td>Entertainment</td><td>Rs</td><td><input id="entertainment" type="number"></tr>
+                <tr><td>HealthCare</td><td>Rs</td><td><input id="healthcare" type="number"></td></tr>
+                <tr><td>Total monthly income</td><td>Rs</td><td><input id="income" type="number"></td></tr>
+                <tr><td></td><td><button class="btn btn-primary" onclick="chart()">Load</button></td></tr>
+
+            </table>
+      
+        </div>
+
+        
+<table class="columns" align="center" >
+      <tr>
+        <td><div id="piechart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table>
+    <br>
+
+    <div id="Info" style="text-align: center;">
+        <br>
+        <br>
+        <form id="add-task">
+          <label>New Note:</label>  <input class="name" id="task" type="text" placeholder="My Note" class="form-control" required/>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+    <br>
+    <div id="task-list" style="text-align: center;">
+        <table class="table table-bordered table-striped" align="center" border="1px" >
+            <th>To-Do For The Day</th>
+
+        </table>
+    </div>
+    <br>
+    <br>
+    <h4 align="center" >Expexted Annual Expenses </h4>
+<table  class="table table-striped" >
+    <thead><th>Foods</th><th>Housing</th><th>Saving</th><th>Entertainment</th><th>HealthCare</th><th>Others</th>
+    </thead>
+    <tbody id="cow" >
+
+    </tbody>
+
+
+</table>
+    
+    </body>
+
+
+</html>

@@ -1,0 +1,24 @@
+body{
+    border: 2px;
+    padding:2px;
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, serif
+
+
+
+}
+h1{
+    font-weight: bold;
+    position:relative;
+    color: red ;
+    border-radius: 40px;
+    background-color: lightpink;
+    text-align: center;
+
+}
+#pie{
+padding-left: 300px;
+}
+#total1{
+padding-left: 300px;
+}
