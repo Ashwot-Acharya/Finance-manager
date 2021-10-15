@@ -4,7 +4,7 @@
         <title>
             FINANCIAL DATA MANAGER
         </title>
-    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="finance.css">
 
         <script src="MainBrain.js" defer ></script>
@@ -12,29 +12,29 @@
 
     </head>
     <body >
-        <h1>FINANCIAL-DATA-MANGAER</h1>
+      <b>  <h1 class="jumbotron text-white text-center bg-primary my-3 " >FINANCIAL-DATA-MANGAER</h1></b>
         <br>
         <br>
-        <div>
+        <div class="container jumbotron text-white bg-dark text-white text-center" >
         
-            <table id="pie" >
+            <table id="pie" class="table"  >
                 <th>Enter your estimated daily expenses(Nrs)</th>
                 
-                <tr><td>Foods</td><td>Rs</td> <td><input id="fod"type ="number"><td><button>delete</button> </td></tr>
-                <tr><td>Housing</td><td>Rs</td><td><input id="hous" type="number"></td><td><button>delete</button></td></tr>
-                <tr><td>Saving</td><td>Rs</td><td><input id="hous" type="number"></td><td><button>delete</button></td></tr>
-                <tr><td>Entertainment</td><td>Rs</td><td><input id="ente" type="number"></td><td><button>delete</button></td></tr>
-                <tr><td>HealthCare</td><td>Rs</td><td><input id="ente" type="number"></td><td><button>delete</button></td></tr>
-                <tr><td>Total monthly income</td><td>Rs</td><td><input id="ente" type="number"></td></tr>
-                <tr><td></td><td><button onclick="chart()">Load</button></td><td><button>reset values</button></td></tr>
+                <tr><td>Foods</td><td>Rs</td> <td><input class="form form-control" id="fod"type ="number"><td><button class="btn btn-primary" >delete</button> </td></tr>
+                <tr><td>Housing</td><td>Rs</td><td><input id="hous" class="form form-control" type="number"></td><td><button class="btn btn-primary">delete</button></td></tr>
+                <tr><td>Saving</td><td>Rs</td><td><input id="hous" class="form form-control" type="number"></td><td><button class="btn btn-primary" >delete</button></td></tr>
+                <tr><td>Entertainment</td><td>Rs</td><td><input class="form form-control"" id="ente" type="number"></td><td><button class="btn btn-primary">delete</button></td></tr>
+                <tr><td>HealthCare</td><td>Rs</td><td><input id="ente" class="form form-control" type="number"></td><td><button class="btn btn-primary" >delete</button></td></tr>
+                <tr><td>Total monthly income</td><td>Rs</td><td><input id="ente" class="form form-control" type="number"></td></tr>
+                <tr><td></td><td><button class="btn btn-warning" onclick="chart()">Load</button></td><td><button class="btn btn-warning" >reset values</button></td></tr>
 
             </table>
       
         </div>
         <br>
 
-        <div class="Intrest_Calculator">
-            <table>
+        <div class=" container text-center  Intrest_Calculator">
+            <table class="table table-primary">
                 <th>Intrest Calculator</th>
                 <tr>
                     <td>Enter your Investment: Rs</td>
@@ -54,7 +54,7 @@
                 <tr>
                     <td></td>
           
-                    <td><button>Calculate</button></td>
+                    <td><button class="btn btn-dark text-white" >Calculate</button></td>
                 </tr>
 
             </table>
@@ -63,12 +63,14 @@
             </table>
 
         </div>
-        <div id="Info" style="text-align: center;">
+        <div id="Info" class="text-center">
             <br>
             <br>
             <form id="add-task">
-               <label>Add Notes:</label> <input class="name" id="task" type="text" placeholder="My note" class="form-control" required/>
-                <button type="submit" class="btn btn-primary">Add</button>
+               <label for="notes" >Add Notes:</label> <input class="name form form-control" id="task" type="text" placeholder="My note" class="form-control" required/>
+               <br>
+
+               <button type="submit" class="btn btn-dark text-white">Add</button>
             </form>
         </div>
         <br>
